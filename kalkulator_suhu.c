@@ -6,8 +6,8 @@ int main() {
     float hasil;      //bilangan desimal menggunakan koma    
 
     // input suhu hanya sekali saja
-    printf("Masukkan Suhu Dalam Celcius = ");
-    scanf("%f", &celcius);
+    printf("Masukkan Suhu Dalam Celcius = "); //input suhu
+    scanf("%f", &celcius); //membaca input pengguna
 
     // perulangan while agar bisa pilih berulang kali
     while (1) {
@@ -17,13 +17,13 @@ int main() {
         printf("3. Kelvin\n");
         printf("99. Keluar\n");
         printf("Masukkan pilihan mu = ");
-        scanf("%d", &pilihan);
+        scanf("%d", &pilihan); //input pilihan
 
         switch (pilihan) {
             case 1: //reamur
                 hasil = celcius * 4 / 5;
                 printf("Suhu Reamur adalah = %.2f\n", hasil);
-                break;
+                break; //keluar dari case 1
             case 2: //fahrenheit
                 hasil = (celcius * 9 / 5) + 32;
                 printf("Suhu Fahrenheit adalah = %.2f\n", hasil);
